@@ -29,7 +29,7 @@ class AuthController extends Controller
         }
 
         return back()->withErrors([
-            'email' => config('errors.auth.email'),
+            'email' => __('errors.auth.email'),
         ]);
     }
 }

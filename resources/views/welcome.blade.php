@@ -7,6 +7,10 @@
     @inertiaHead
 </head>
 <body>
-@inertia
+@extends('adminlte::page')
+
+@section('content')
+    @inertia
+@endsection
 </body>
 </html>

@@ -8,7 +8,7 @@
       "skipLibCheck": true,
       "baseUrl": ".",
       "paths": {
-          "@/*": ["src/*"]
+          "@/*": ["resources/js/*"]
       },
       "types": ["vue"]
   },
