@@ -18,4 +18,12 @@ enum UserRolesEnum: string
             ],
         };
     }
+
+    public function getRoleName(): string
+    {
+        return match ($this) {
+            self::USER => __('system.roles.user'),
+            self::ADMIN => __('system.roles.admin'),
+        };
+    }
 }
