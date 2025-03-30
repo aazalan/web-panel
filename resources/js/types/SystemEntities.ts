@@ -33,10 +33,14 @@ export type CursorPaginatedData<T> = {
     data: Array<T>;
     links: PaginationLinks;
     meta: CursorPaginationMeta;
-}
+};
 
 export type PaginatedData<T> = {
     data: Array<T>;
     links: PaginationLinks;
     meta: PaginationMeta;
-}
+};
+
+export type TableHeaders<T> = {
+    [K in keyof T]: string;
+};

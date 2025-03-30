@@ -5,6 +5,17 @@ export type User = {
     role: string;
 };
 
+export type Role = {
+    id: number;
+    name: string;
+    permissions: Array<Permission>;
+};
+
+export type Permission = {
+    id: number;
+    name: string;
+}
+
 export type Integration = {
     id: number;
 };
